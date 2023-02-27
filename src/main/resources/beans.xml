@@ -6,5 +6,8 @@
 
     <bean id="Saludo" class="com.jaubass.cursospringframework.Saludo"/>
     <bean id="NotificationService" class="com.jaubass.cursospringframework.NotificationService"/>
+    <bean id="UserService" class="com.jaubass.cursospringframework.UserService">
+      <constructor-arg name="notificationService" value="NotificationService" />
+    </bean>
 
 </beans>
